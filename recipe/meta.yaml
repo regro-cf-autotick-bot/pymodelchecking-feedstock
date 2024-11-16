@@ -1,13 +1,13 @@
 {% set name = "pyModelChecking" %}
-{% set version = "1.3.3" %}
+{% set version = "1.3.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyModelChecking-{{ version }}.tar.gz
-  sha256: 999e3a0016d4d447861cff8e51d091546ea9268f37bb02abeabe66d9c423fb5c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: 558afb5d0469cc800b9fc2329157ec6c3c0ee7c67138eb8cb864418a6b4ce842
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ about:
   home: https://github.com/albertocasagrande/pyModelChecking
   summary: A simple Python model checking package
   license: GPL-2.0-or-later
-  license_file: 
+  license_file:
     - LICENSE
     - GPLv2.txt
   doc_url: https://pymodelchecking.readthedocs.io/
